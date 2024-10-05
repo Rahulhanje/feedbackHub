@@ -16,7 +16,7 @@ const Page = ({ params }: { params: { projectId: string } }) => {
     <p className=" text-lg mb-2 text-secondary-foreground">Embed the code in out site</p>
    <div className="bg-blue-950 p-6 mt-2 rounded-md relative">
    <code className="text-white">
-        {`<my-widget project=${params.projectId}></my-widget>`}
+        {`<my-widget project-id=${params.projectId}></my-widget>`}
         <br></br>
         {`<script src="example.com"</script>`}
     </code>
