@@ -28,8 +28,8 @@ function Table(props: { data: Feedback[] }) {
   const columns = React.useMemo<ColumnDef<Feedback>[]>(
     () => [
       {
-        accessorKey: 'userName',
-        header: 'First Name',
+        accessorKey: 'username',
+        header: 'User Name',
         cell: info => info.getValue(),
         footer: props => props.column.id,
       },
