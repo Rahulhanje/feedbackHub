@@ -20,6 +20,7 @@ import {
 import { InferSelectModel } from "drizzle-orm";
 import { feedbacks, projects } from "@/db/schema";
 
+
 type Feedback = InferSelectModel<typeof feedbacks>;
 
 function Table(props: { data: Feedback[] }) {
@@ -224,14 +225,14 @@ function Filter({
   column,
   table,
 }: {
-  column: Column<any, any>
-  table: TanstackTable<any>
+  column: Column<Feedback, unknown>; // Use Feedback type for column
+  table: TanstackTable<Feedback>; // Use Feedback type for the table
 }) {
   const firstValue = table
     .getPreFilteredRowModel()
-    .flatRows[0]?.getValue(column.id)
+    .flatRows[0]?.getValue(column.id);
 
-  const columnFilterValue = column.getFilterValue()
+  const columnFilterValue = column.getFilterValue();
 
   return typeof firstValue === 'number' ? (
     <div className="flex space-x-2" onClick={e => e.stopPropagation()}>
@@ -269,7 +270,8 @@ function Filter({
       type="text"
       value={(columnFilterValue ?? '') as string}
     />
-  )
+  );
 }
+
 
 export default Table;
