@@ -26,8 +26,10 @@ const ManageSubscription = () => {
     }
     catch (error) {
       console.error(error);
+      setError("Error");
     }
     setLoading(false);
+    
   }
 
   if (error) {

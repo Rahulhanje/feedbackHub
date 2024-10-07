@@ -2,7 +2,6 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { getStripe } from "@/lib/stripeClient";
-import { useRouter } from "next/navigation";
 import { Loader2 } from "lucide-react";
 
 type Props = {
@@ -10,7 +9,6 @@ type Props = {
 }
 
 const SubscribeBtn = ({ price }: Props) => {
-  const router = useRouter();
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -33,6 +31,7 @@ const SubscribeBtn = ({ price }: Props) => {
     }
     catch (error) {
       console.error(error);
+      setError("Error")
     }
     setLoading(false);
   }
