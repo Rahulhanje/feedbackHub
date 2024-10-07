@@ -7,7 +7,6 @@ type Props = {
 };
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,

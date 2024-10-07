@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { getStripe } from "@/lib/stripeClient";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
