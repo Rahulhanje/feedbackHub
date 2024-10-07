@@ -28,7 +28,7 @@ function Headermenu() {
       </DropdownMenuTrigger>
         <DropdownMenuContent>
           <Link href={'/dashboard'}><DropdownMenuItem><Folder className="mr-2 h-4 w-4"></Folder>Projects</DropdownMenuItem></Link>
-          <Link href={'/dashboard'}><DropdownMenuItem><CreditCard className="mr-2 h-4 w-4" />Billing</DropdownMenuItem></Link>
+          <Link href={'/payments'}><DropdownMenuItem><CreditCard className="mr-2 h-4 w-4" />Billing</DropdownMenuItem></Link>
 
         </DropdownMenuContent>
       </DropdownMenu>
