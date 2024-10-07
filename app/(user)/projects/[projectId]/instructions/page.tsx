@@ -6,10 +6,10 @@ const Page = ({ params }: { params: { projectId: string } }) => {
     Invalid Project ID
   </div>)
   
-  // if(!process.env.widget.umd.js) return(<div>
-  //    Missing Widget_URL
-  //  </div>
-  //  )
+  if(!process.env.WIDGET_URL) return(<div>
+     Missing Widget_URL
+   </div>
+   )
   
   return <div>
     <h1 className="font-bold text-xl mb-2">Start Collectiong the feedback</h1>
@@ -18,10 +18,9 @@ const Page = ({ params }: { params: { projectId: string } }) => {
    <code className="text-white">
         {`<my-widget project-id=${params.projectId}></my-widget>`}
         <br></br>
-        {`<script src="example.com"</script>`}
+        {`<script src="${process.env.WIDGET_URL}widget.umd.js"></script>`}
     </code>
-    <CopyBtn text={`<my-widget project=${params.projectId}></my-widget>\n
-       <script src="{example.com"</script>`}></CopyBtn>
+    <CopyBtn text={`<my-widget project-id="${params.projectId}"></my-widget>\n<script src="${process.env.WIDGET_URL}/widget.umd.js"></script>`} />
    </div>
   </div>;
 };
