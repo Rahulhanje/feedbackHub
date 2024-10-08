@@ -30,16 +30,17 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="container mx-auto max-w-screen-xl px-4 my-24 flex items-center flex-col">
-      <h2 className="mb-6 text-2xl font-bold">Features</h2>
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {features.map((feature, index) => (
-            <Feature key={index} {...feature} />
-          ))}
-        </div>
+    <section className="container mx-auto max-w-screen-xl px-4 my-24 flex items-center flex-col w-full">
+    <h2 className="mb-6 text-2xl font-bold text-center">Features</h2>
+    <div className="w-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+        {features.map((feature, index) => (
+          <Feature key={index} {...feature} />
+        ))}
       </div>
-    </section>
+    </div>
+  </section>
+  
   );
 }
 

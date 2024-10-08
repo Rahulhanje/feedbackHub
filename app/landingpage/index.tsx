@@ -6,7 +6,7 @@ import Footer from './footer'
 
 function LandingPage() {
   return (
-    <div   className="mx-24">
+    <div   className="mx-24 ">
       <Hero></Hero>
       <FeaturesSection></FeaturesSection>
       <PricingSection></PricingSection>
