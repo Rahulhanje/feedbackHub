@@ -10,7 +10,8 @@ The SASS Dashboard is a web application built with Next.js, Tailwind CSS, and Dr
 - Managing user subscriptions
 - **Project Creation**: Users can create a project and receive an embeddable code to integrate into their websites.
 - **Feedback Collection**: Website visitors can easily submit feedback along with ratings.
-- **Feedback Management**: All feedback submitted through the embedded widget is viewable in the project's dashboard, with ratings displayed for easy review.
+- **Feedback Management**: All feedback submitted through the embedded widget is viewable in the project's dashboard, with ratings displayed 
+for easy review.Users can sort feedback by rating (from lower to higher) and search for specific feedback entries to streamline the review process.
 - **UI Components**: Includes essential form components such as buttons, inputs, labels, popovers, and text areas.
 - **Tailwind CSS Styling**: Provides a responsive and modern design using Tailwind CSS.
 - **Supabase Integration**: Uses Supabase RPC for feedback submission and database management.
