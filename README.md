@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SASS Dashboard
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+The SASS Dashboard is a web application built with Next.js, Tailwind CSS, and Drizzle ORM. It provides a user-friendly interface for managing and interacting with projects, including:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Creating new projects
+- Viewing a list of existing projects
+- Accessing project instructions
+- Managing user subscriptions
+- **Project Creation**: Users can create a project and receive an embeddable code to integrate into their websites.
+- **Feedback Collection**: Website visitors can easily submit feedback along with ratings.
+- **Feedback Management**: All feedback submitted through the embedded widget is viewable in the project's dashboard, with ratings displayed for easy review.
+- **UI Components**: Includes essential form components such as buttons, inputs, labels, popovers, and text areas.
+- **Tailwind CSS Styling**: Provides a responsive and modern design using Tailwind CSS.
+- **Supabase Integration**: Uses Supabase RPC for feedback submission and database management.
+- **Popover Interaction**: The feedback form is displayed inside a popover triggered by a feedback button.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**User Authentication and Authorization:**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Secure user authentication using Clerk.
+- Role-based access control for different project functionalities.
 
-## Learn More
+**Project Management:**
 
-To learn more about Next.js, take a look at the following resources:
+- Create new projects with custom details.
+- View a list of projects with filtering and sorting options.
+- Access detailed project information, including instructions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Subscription Management:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Subscribe to the service to access premium features.
+- Manage existing subscriptions and make payments.
 
-## Deploy on Vercel
+**Database:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Data persistence using PostgreSQL and Drizzle ORM.
+- Secure database connection and management.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Front-End Technologies:**
+
+- Next.js for server-side rendering and efficient front-end development.
+- Tailwind CSS for rapid UI design and styling.
+- Lucide React for icons and visual elements.
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/<your-username>/sass_dashboard.git
+   ```
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd sass_dashboard
+   ```
+
+3. **Install dependencies using npm:**
+   ```bash
+   npm install
+   ```
+
+4. **Set up environment variables:**
+   - Create a `.env` file in the root directory.
+   - Add the following environment variables:
+     ```
+     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=<your-clerk-publishable-key>
+     NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=<your-stripe-publishable-key>
+     STRIPE_SECRET_KEY=<your-stripe-secret-key>
+     DATABASE_URL=<your-database-url>
+     ```
+
+5. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+## Usage
+
+Once the project is set up, you can access the application at `http://localhost:3000`.
+
+**Creating a New Project:**
+
+1. Login as a user.
+2. Navigate to the "Create Project" page.
+3. Fill in the required project details and submit.
+
+**Viewing Projects:**
+
+1. Login as a user.
+2. Navigate to the "Dashboard" page.
+3. View a list of all projects with filtering and sorting options.
+
+**Accessing Project Instructions:**
+
+1. Login as a user.
+2. Select a project from the project list.
+3. Navigate to the "Instructions" page.
+
+**Managing Subscriptions:**
+
+1. Login as a user.
+2. Navigate to the "Payments" page.
+3. Manage existing subscriptions, make payments, or subscribe to new plans.
+
+## Contact Information
+
+For any questions or issues, please contact:
+
+- Email: rahulhanje0.7@gmail.com
+
