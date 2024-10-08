@@ -15,11 +15,8 @@ export default function RootLayout({
         <Script src="https://feebackhub-widget.vercel.app/widget.umd.js"></Script>
         </Head>
         <body>
-        <Script src="https://feebackhub-widget.vercel.app/widget.umd.js"></Script>
-        
-          <Pageheader></Pageheader>
-        <my-widget project-id="62"></my-widget>
-
+        <Pageheader></Pageheader>
+          
           {children}
         </body>
       </html>
