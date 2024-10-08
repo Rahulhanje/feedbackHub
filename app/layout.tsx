@@ -2,7 +2,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import Pageheader from "@/components/page-header";
 import Script from "next/script";
-import Head from "next/head";
+
 export default function RootLayout({
   children,
 }: {
@@ -11,13 +11,14 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <Head>
-        <Script src="https://feebackhub-widget.vercel.app/widget.umd.js"></Script>
-        </Head>
+        <head>
+          <title>My App</title>
+        </head>
         <body>
-          <Script src="https://feebackhub-widget.vercel.app/widget.umd.js"></Script>
-        <Pageheader></Pageheader>
-        <my-widget project-id="62"></my-widget>
+          {/* Move <Script> outside of <head> */}
+          <Script src="https://feebackhub-widget.vercel.app/widget.umd.js" />
+          <Pageheader />
+          <my-widget project-id="62"></my-widget>
           {children}
         </body>
       </html>
