@@ -50,7 +50,7 @@ for easy review.Users can sort feedback by rating (from lower to higher) and sea
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/<your-username>/sass_dashboard.git
+   git clone https://github.com/Rahulhanje/nexx-saas.git
    ```
 
 2. **Navigate to the project directory:**
