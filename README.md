@@ -1,8 +1,8 @@
-# SASS Dashboard
+# feedbackHub
 
 ## Project Overview
 
-The SASS Dashboard is a web application built with Next.js, Tailwind CSS, and Drizzle ORM. It provides a user-friendly interface for managing and interacting with projects, including:
+ThefeedbackHub is a web application built with Next.js, Tailwind CSS, and Drizzle ORM. It provides a user-friendly interface for managing and interacting with projects, including:
 
 - Creating new projects
 - Viewing a list of existing projects
