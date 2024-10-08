@@ -16,7 +16,7 @@ for easy review.Users can sort feedback by rating (from lower to higher) and sea
 - **Tailwind CSS Styling**: Provides a responsive and modern design using Tailwind CSS.
 - **Supabase Integration**: Uses Supabase RPC for feedback submission and database management.
 - **Popover Interaction**: The feedback form is displayed inside a popover triggered by a feedback button.
-
+![alt text](image.png)
 ## Features
 
 **User Authentication and Authorization:**
