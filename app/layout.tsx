@@ -15,6 +15,8 @@ export default function RootLayout({
         <Pageheader></Pageheader>
           
           {children}
+          <my-widget project-id="60"></my-widget>
+<script src="https://feebackhub-widget.vercel.app//widget.umd.js"></script>
         </body>
       </html>
     </ClerkProvider>
