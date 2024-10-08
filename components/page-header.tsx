@@ -12,12 +12,12 @@ const Pageheader = () => {
   return (
     <header className=" w-full sticky inset-x-0 top-0 z-50 border backdrop-blur-lg bg-white/60 border-white/30">
       <div className="w-full max-w-screen-xl px-2.5 lg:px-20 relative mx-auto">
-        <div className="flex h-14 items-center justify-between px-2">
+        <div className="flex h-14 items-center justify-between px-2 mr-5">
           <Image src="/LOGO.png" alt="logo" width="300" height="250" />
 
           <div>
             <SignedOut>
-              <div className="flex">
+              <div className="flex mr-5">
                 <SignInButton>
                   <Button className="">Sign In</Button>
                 </SignInButton>
