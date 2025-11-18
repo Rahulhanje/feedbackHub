@@ -9,6 +9,14 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/Rahulhanje/feedbackHub/stargazers"><img src="https://img.shields.io/github/stars/Rahulhanje/feedbackHub?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/Rahulhanje/feedbackHub/network/members"><img src="https://img.shields.io/github/forks/Rahulhanje/feedbackHub?style=social" alt="GitHub forks"></a>
+  <a href="https://github.com/Rahulhanje/feedbackHub/issues"><img src="https://img.shields.io/github/issues/Rahulhanje/feedbackHub" alt="GitHub issues"></a>
+  <img src="https://img.shields.io/badge/Next.js-14-black" alt="Next.js">
+  <img src="https://img.shields.io/badge/TypeScript-5-blue" alt="TypeScript">
+</p>
+
+<p align="center">
   A modern SaaS platform for collecting, managing, and analyzing user feedback with beautiful embeddable widgets
 </p>
 
@@ -123,7 +131,7 @@ npm run db:push
 To open the database studio:
 
 ```bash
-npm run db:studio
+npm run db:stdio
 ```
 
 ### 5. Run the Development Server
@@ -206,7 +214,8 @@ feedbackHub/
 - `npm run lint` - Run ESLint
 - `npm run db:generate` - Generate database migrations
 - `npm run db:push` - Push schema changes to database
-- `npm run db:studio` - Open Drizzle Studio
+- `npm run db:migrate` - Run database migrations
+- `npm run db:stdio` - Open Drizzle Studio
 
 ## 🤝 Contributing
 
@@ -230,6 +239,10 @@ If you need help or have questions:
 **Rahul Hanje**
 - GitHub: [@Rahulhanje](https://github.com/Rahulhanje)
 - Email: rahulhanje0.7@gmail.com
+
+## 📄 License
+
+This project is available for use under the terms specified by the project owner. For more information about licensing, please contact the maintainer.
 
 ---
 
